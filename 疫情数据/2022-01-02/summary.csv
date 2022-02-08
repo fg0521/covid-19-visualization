@@ -1,0 +1,3 @@
+id,area,confirmed,died,cured,asymptomatic,asymptomaticRelative,unconfirmed,relativeTime,confirmedRelative,unconfirmedRelative,curedRelative,diedRelative,icu,icuRelative,overseasInput,unOverseasInputCumulative,overseasInputRelative,unOverseasInputNewAdd,curConfirm,curConfirmRelative,icuDisable
+1,china,132350,5699,120897,550,52,1,1640966400,279,1,72,0,16,1,11199,121102,60,170,5754,163,1
+2,oversea,289658861,5452999,254159339,None,None,None,1640966400,1575063,None,488947,6279,None,None,None,None,None,None,30046523,1079837,None

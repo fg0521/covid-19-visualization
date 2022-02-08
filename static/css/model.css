@@ -1,0 +1,246 @@
+/* ***************切换按钮样式*************** */
+
+
+
+.mui-switch-con {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.mui-switch-con label {
+  display: block
+}
+
+.mui-switch {
+  width: 46px;
+  height: 26px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  background-color: #b8b8b8;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  outline: none;
+}
+
+.mui-switch:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.mui-switch:checked {
+  border-color: #e6e6e6;
+  box-shadow: #dfdfdf 0 0 0 16px inset;
+  background-color: #10427a;
+}
+
+.mui-switch:checked:before {
+  left: 20px;
+}
+
+.mui-switch.mui-switch-animbg {
+  transition: background-color ease 0.4s;
+}
+
+.mui-switch.mui-switch-animbg:before {
+  transition: left 0.3s;
+}
+
+.mui-switch.mui-switch-animbg:checked {
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  background-color: #10427a;
+  transition: border-color 0.4s, background-color ease 0.4s;
+}
+
+.mui-switch.mui-switch-animbg:checked:before {
+  transition: left 0.3s;
+}
+
+.mui-switch.mui-switch-anim {
+  transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
+}
+
+.mui-switch.mui-switch-anim:before {
+  transition: left 0.3s;
+}
+
+.mui-switch.mui-switch-anim:checked {
+  box-shadow: #10427a 0 0 0 16px inset;
+  background-color: #10427a;
+  transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
+}
+
+.mui-switch.mui-switch-anim:checked:before {
+  transition: left 0.3s;
+}
+
+
+
+/* ***************滚动条样式*************** */
+.local_hot { 
+  width: 100%; 
+  height: 100%; 
+  font-size: 1.5vmin;  
+  font-family: 'TECH';
+}
+.local_hot ul { 
+  margin: 0; 
+  line-height: 150%;
+  list-style-type: none;
+}
+.local_hot a { 
+  color: rgb(255, 255, 255); 
+  text-decoration: none;
+}
+.local_hot a:hover { 
+  /* text-decoration: underline; */
+  color: rgb(0, 238, 255);
+  font-size: 1.6vmin;
+  font-weight: bold;
+  font-family: 'TECH';
+}
+
+.national_hot { 
+  width: 100%; 
+  height: 100%; 
+  font-size: 2.5vmin;
+  font-family: 'TECH';
+  text-align: center;  
+}
+.national_hot ul { 
+  margin: 0; 
+  line-height: 150%;
+  list-style-type: none;
+}
+.national_hot a { 
+  color: rgb(255, 255, 255); 
+  text-decoration: none;
+}
+.national_hot a:hover { 
+  /* text-decoration: underline; */
+  color: rgb(0, 238, 255);
+  font-size: 2.6vmin;
+  font-weight: bold;
+  font-family: 'TECH';
+}
+
+
+.str_wrap {
+  overflow:hidden;
+  width:100%;
+  line-height:16px;
+  position:relative;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;  
+  /* background:#a17b7b; */
+  white-space:nowrap;
+}
+
+/* .str_wrap.str_active {
+  background:#012a75;
+} */
+.str_move { 
+  white-space:nowrap;
+  position:absolute; 
+  top:0; 
+  left:0;
+  cursor:move;
+}
+.str_move_clone {
+  display:inline-block;
+  /* //display:inline;
+  //zoom:1; */
+  vertical-align:top;
+  position:absolute; 
+  left:100%;
+  top:0;
+}
+.str_vertical .str_move_clone {
+  left:0;
+  top:100%;
+}
+.str_down .str_move_clone {
+  left:0;
+  bottom:100%;
+}
+.str_vertical .str_move,
+.str_down .str_move {
+  white-space:normal;
+  width:100%;
+}
+.str_static .str_move,
+.no_drag .str_move,
+.noStop .str_move{
+  cursor:inherit;
+}
+.str_wrap img {
+  max-width:none !important;	
+}
+
+
+/* ***************切换按钮样式*************** */
+
+#choice:hover{
+  background: linear-gradient(90deg, #1cc0da, #189fbe, #0c3354, #08112e, #1cc0da);
+  background-size: 400%;
+}
+
+#choice:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right:-5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+#choice:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+
+#choice:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+  0%{
+      background-position: 0%;
+  }
+  100%{
+      background-position: 400%;
+  }
+}
+
+@font-face {
+  font-family: 'TECH';
+  src:url('../font/tech.woff') format('woff'), /* Modern Browsers */
+  url('../font/tech.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../font/tech.svg') format('svg'); /* Legacy iOS */
+ }

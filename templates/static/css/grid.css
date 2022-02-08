@@ -1,0 +1,421 @@
+body{
+    background: url('../img/bg.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.main{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap:10px;
+}
+
+.item-1{
+    display: grid;
+    grid-template-rows: 1fr 8fr 8fr 8fr;
+    grid-gap:10px;
+    /* background-color: red */
+}
+.info_time{
+    display: grid;
+    height: calc(4vh);
+    grid-template-rows: repeat(2,1fr);
+    background: url('../img/info.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(234, 247, 208); */
+}
+.info{
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    font-size: 1.2vh;
+    font-family: 'TECH';
+    /* word-spacing: 2px; */
+    color: #fff;
+    letter-spacing: 1px;
+    /* background-color: rgb(202, 138, 138); */
+}
+.time{
+    display: grid;
+    justify-items: start;
+    align-items: flex-start;
+    font-size: 1.2vh;
+    font-family: 'TECH';
+    color: #fff;
+    letter-spacing: 1px;
+    /* background-color: rgb(243, 140, 140); */
+}
+#tend_chart{
+    height: calc(32vh);
+    background: url('../img/left.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(202, 226, 153); */
+}
+#input_chart{
+    height: calc(32vh);
+    background: url('../img/left.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(136, 172, 58); */
+}
+#city_chart{
+    position: relative;
+    background: url('../img/left.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(58, 77, 23); */
+}
+#map2{
+    height: calc(32vh);
+    /* background-color: rgb(235, 235, 235, 0.3); */
+    z-index: 1;
+}
+#my_form{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    width: 65px;
+    height: 45px;
+    z-index: 2;
+}
+#city_name{
+    position: absolute;
+    border-radius: 4px;
+    width: 65px;
+    height: 20px;
+    border:solid 1px #fff;
+    /* border-color: #fff; */
+    background: #0f193d;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: 'TECH';
+    letter-spacing: 1px;
+}
+#chose_city{
+    position: absolute;
+    border-radius: 4px;
+    width: 65px;
+    height: 20px;
+    top:25px;
+    /* border-color: #fff; */
+    border:solid 1px #fff;
+    outline: none;
+    background: #0f193d;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'TECH';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+
+.item-2{
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 3.5fr 19fr;
+    grid-gap:10px;
+    /* background-color:orange */
+}
+.title{
+    display: grid;
+    height: calc(6vh);
+    font-family: 'TECH';
+    /* color:rgb(19, 19, 19); */
+    font-size: 4.5vh;
+    justify-content: center;
+    align-content: center; 
+    color: #ffffff;
+    background: url('../img/title.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: aqua; */
+    letter-spacing: 4px;
+    
+}
+.hw{
+    display: grid;
+    height: calc(4vh);
+    grid-template-rows: 1fr 8fr 1fr;
+    background: url('../img/hot.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.keynum{
+    display: grid;
+    height: calc(14vh);
+    grid-template-rows: 30% 46% 20%;
+    grid-template-columns: repeat(5,1fr);
+    background: url('../img/kw.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(123, 153, 187); */
+}
+.key11{
+    display: grid;
+    color:white;
+    font-family: 'TECH';
+    color:#fff;
+    /* color:#7a5ef8; */
+    /* text-shadow: 0.5px 0.5px 2px rgb(255, 255, 255); */
+    padding-top: 6px;
+    font-size: 2.6vh;
+    justify-content: center;
+    align-content: center; 
+    letter-spacing: 1px;
+    /* background-color: rgb(214, 93, 93); */
+}
+.key12{
+    display: grid;
+    font-family: 'TECH';
+    color:white;
+    padding-top: 6px;
+    font-size: 2.6vh;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 1px; 
+    /* background-color: rgb(214, 176, 93); */
+}
+.key13{
+    display: grid;
+    font-family: 'TECH';
+    color:white;
+    padding-top: 6px;
+    font-size: 2.6vh;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 1px; 
+    /* background-color: rgb(214, 206, 93); */
+}
+.key14{
+    display: grid;
+    font-family: 'TECH';
+    color:white;
+    padding-top: 6px;
+    font-size: 2.6vh;
+    justify-content: center;
+    align-content: center; 
+    letter-spacing: 1px;
+    /* background-color: rgb(107, 214, 93); */
+}
+.key15{
+    display: grid;
+    font-family: 'TECH';
+    color:white;
+    padding-top: 6px;
+    font-size: 2.6vh;
+    justify-content: center;
+    align-content: center; 
+    letter-spacing: 1px;
+    /* background-color: rgb(93, 190, 214); */
+}
+.key21{
+    display: grid;
+    font-family: 'DS-DIGI';
+    color:#7a5ef8;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    font-size: 7vh;
+    justify-content: center;
+    align-content: center; 
+    /* background-color: rgb(214, 16, 92); */
+}
+.key22{
+    display: grid;
+    font-family: 'DS-DIGI';
+    color:#f73771;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    font-size: 7vh;
+    justify-content: center;
+    align-content: center; 
+    /* background-color: rgb(204, 102, 62); */
+}
+.key23{
+    display: grid;
+    font-family: 'DS-DIGI';
+    color:#66efea;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    font-size: 7vh;
+    justify-content: center;
+    align-content: center; 
+    /* background-color: rgb(216, 230, 29); */
+}
+.key24{
+    display: grid;
+    font-family: 'DS-DIGI';
+    color:#348dff;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    font-size: 7vh;
+    justify-content: center;
+    align-content: center; 
+    /* background-color: rgb(114, 184, 108); */
+}
+.key25{
+    display: grid;
+    font-family: 'DS-DIGI';
+    color:#fde604;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    font-size: 7vh;
+    justify-content: center;
+    align-content: center; 
+    /* background-color: rgb(123, 153, 187); */
+}
+.key31{
+    display: grid;
+    color:white;
+    font-family: 'TECH';
+    font-size: 1.8vh;
+    justify-content: center;
+    align-content: center; 
+    letter-spacing: 1px;
+    /* background-color: rgb(129, 0, 39); */
+}
+.key32{
+    display: grid;
+    color:white;
+    font-family: 'TECH';
+    font-size: 1.8vh;;
+    justify-content: center;
+    align-content: center; 
+    letter-spacing: 1px;
+    /* background-color: rgb(172, 112, 0); */
+}
+.key33{
+    display: grid;
+    color:white;
+    font-family: 'TECH';
+    font-size: 1.8vh;
+    justify-content: center;
+    align-content: center; 
+    letter-spacing: 1px;
+    /* background-color: rgb(160, 172, 0); */
+}
+.key34{
+    display: grid;
+    color:white;
+    font-family: 'TECH';
+    font-size: 1.8vh;
+    justify-content: center;
+    align-content: center; 
+    letter-spacing: 1px;
+    /* background-color: rgba(10, 124, 0, 0.5); */
+}
+.key35{
+    display: grid;
+    color:white;
+    font-family: 'TECH';
+    font-size: 1.8vh;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 1px;
+    /* background-color: rgb(0, 58, 124); */
+}
+#china_map{
+    /* display: grid;
+    grid-template-rows: 1fr,2fr,16fr; */
+    position: relative;
+    background: url('../img/map.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(1, 150, 100); */
+}
+.com_and_geo {
+    position:absolute;
+    height: 21px;
+    width: 36px;
+    top: 20px;
+    right: 35px;
+    z-index: 2;
+    /* background-color: rgb(119, 177, 216); */
+  }
+#map1{
+    z-index: 1;
+    height: calc(76vh);
+    /* background-color: rgb(67, 124, 161); */
+}
+
+
+.item-3{
+    display: grid;
+    grid-template-rows: 5fr 8fr 4fr 8fr;
+    grid-gap:10px;
+    /* background-color: yellow */
+}
+#wc_chart{
+    height: calc(20vh);
+    background: url('../img/right1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    /* background-color: antiquewhite; */
+}
+#infect_chart{
+    height: calc(32vh);
+    background: url('../img/left.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(199, 106, 199); */
+}
+#percent_chart{
+    height: calc(16vh);
+    background: url('../img/right2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(99, 17, 78); */
+    
+}
+#location_chart{
+    display: grid;
+    height: calc(32vh);
+    grid-template-rows: 12% 20% 68%;
+    background: url('../img/right3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(147, 41, 156); */
+}
+#bd{
+    display: grid;
+    grid-template-columns: 1fr 28fr 1fr;
+    grid-template-rows: 1fr 13fr 1fr;
+}
+/* #bdmap{
+    display: none;
+    
+} */
+.anchorBL{
+    display: none;
+}
+#my_pos{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding-top: 5px;
+    font-size: 1.8vmin;
+    font-family: 'TECH';
+    color: #fff;
+    letter-spacing: 1px;
+    /* border-bottom:solid #fff; */
+    /* background-color: rgb(169, 155, 184); */
+}
+
+@font-face {
+    font-family: 'DS-DIGI';
+    /* src: url('DS-DIGI.eot'); IE9 Compat Modes */
+    /* src: url('DS-DIGI.eot?#iefix') format('embedded-opentype'), IE6-IE8 */
+    src:url('../font/DS-DIGI.woff') format('woff'), /* Modern Browsers */
+    url('../font/DS-DIGI.TTF')  format('truetype'), /* Safari, Android, iOS */
+    url('DS-DIGI.svg#DS-DIGI') format('svg'); /* Legacy iOS */
+   }
+@font-face {
+    font-family: 'TECH';
+    src:url('../font/tech.woff') format('woff'), /* Modern Browsers */
+    url('../font/tech.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../font/tech.svg') format('svg'); /* Legacy iOS */
+   }
